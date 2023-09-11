@@ -56,9 +56,11 @@ table:hover{
 }
 
 #firstSection > div {
+    height: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
+    
 }
 #firstSection > div article{ 
     padding: 30px 0;
@@ -84,7 +86,7 @@ table:hover{
 
 /* ================second-section============== */
 
-#secondSection > div {
+/* #secondSection > div {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 20px
@@ -92,10 +94,10 @@ table:hover{
 .data-table{
     justify-self: end;
    
-}
+} */
 
 /* =================footer========================= */
-footer > div{
+/* footer > div{
     padding: 3% 0;
     display: flex;
     margin: auto;
@@ -103,7 +105,7 @@ footer > div{
     gap: 5px;
     font-size: 1.5rem;
     
-}
+} */
 
 /* =================media-query============== */
 
