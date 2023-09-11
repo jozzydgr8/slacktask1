@@ -17,7 +17,8 @@ a{
     color: var(--color-variant);
 }
 body{
-    background: var(--primary-color);
+    background: var(--bg);
+    height: 100vh;
 }
 h1{
     font-size: 2.5rem;
@@ -112,19 +113,19 @@ table:hover{
 
 /* ================media-300px================ */
 @media (max-width:300px) {
-    table{
+    /* table{
         max-width: fit-content;
     }
     footer > div, table{
         font-size: 0.8rem;
-    }
+    } */
 }
 /* ==================minmax300-600px=========== */
 @media (min-width:300px) and (max-width:600px) {
 
-    table{
+    /* table{
         min-width: 315px;
-    }
+    } */
 }
 /* =======================media-600px============ */
 @media (max-width:600px) {
@@ -134,23 +135,20 @@ table:hover{
     #firstSection > div i , #firstSection > div p{
         font-size: 2.0vw;
     }
-    footer > div{
-        font-size: 1.0rem;
-    }
 }
 
 /* ==================minmax-600-910px================== */
 
 @media (min-width:600px) and (max-width:910px) {
-    table{
+    /* table{
     min-width:400px;
-}
+} */
 }
 
 /* ===========================media-910px============== */
 
 @media (max-width:910px) {
-    #secondSection > div{
+    /* #secondSection > div{
         grid-template-columns: 1fr;
         justify-items: center;
         
@@ -158,7 +156,7 @@ table:hover{
     .data-table, .skills-table{
         justify-self: center;
         margin: 5px 0;
-    }
+    } */
 
     #firstSection > div > img{
         width: 80%;
