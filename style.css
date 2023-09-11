@@ -18,7 +18,14 @@ a{
 }
 body{
     background: var(--bg);
+    color: var(--primary-color);
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
 }
 h1{
     font-size: 2.5rem;
@@ -27,141 +34,20 @@ h3{
     text-align: center;
 
 }
-
-section > div{
-    padding: 3% 10%;
-    width: 100%;
+img{
+    width: 200px;
+    height: 200px;
 }
-table{
-    border: transparent;
-    max-width: 400px;
-    padding: 3%;
-    min-height: 350px;
-    border-radius: 20px;
-    background-color: var(--bg-variant);
-    color: var(--primary-color);
-    transition: var(--transition);
-    cursor: pointer;
-}
-table:hover{
-    background: var(--primary-color);
-    color: var(--bg-variant);
-    border: solid 2px var(--color-variant);
-}
-
-/* ===============first-section=============== */
-
-#firstSection{
-    background: var(--bg);
-    color: var(--primary-color);
-}
-
-#firstSection > div {
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    
-}
-#firstSection > div article{ 
-    padding: 30px 0;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-auto-rows: minmax(30px,auto);
-
-}
-#firstSection > div > img{
-    width: 40%;
-    border-radius: 20px;
-    box-shadow: 8px 10px  rgb(163, 163, 163);
-    justify-self: center;
-    cursor: pointer;
-    transition: var(--transition);
-    transform: rotate(-16deg);
-}
-#firstSection > div > img:hover{
-    transform: rotate(0);
-}
-
-
-
-/* ================second-section============== */
-
-/* #secondSection > div {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 20px
-}
-.data-table{
-    justify-self: end;
-   
-} */
-
-/* =================footer========================= */
-/* footer > div{
-    padding: 3% 0;
-    display: flex;
-    margin: auto;
-    justify-content: center;
-    gap: 5px;
-    font-size: 1.5rem;
-    
-} */
 
 /* =================media-query============== */
 
 
 /* ================media-300px================ */
-@media (max-width:300px) {
-    /* table{
-        max-width: fit-content;
-    }
-    footer > div, table{
-        font-size: 0.8rem;
-    } */
-}
-/* ==================minmax300-600px=========== */
-@media (min-width:300px) and (max-width:600px) {
-
-    /* table{
-        min-width: 315px;
-    } */
-}
+/* ==================minmax300-600px==========
 /* =======================media-600px============ */
-@media (max-width:600px) {
-    h1{
-        font-size: 1.0rem;
-    }
-    #firstSection > div i , #firstSection > div p{
-        font-size: 2.0vw;
-    }
-}
 
 /* ==================minmax-600-910px================== */
 
-@media (min-width:600px) and (max-width:910px) {
-    /* table{
-    min-width:400px;
-} */
-}
-
 /* ===========================media-910px============== */
 
-@media (max-width:910px) {
-    /* #secondSection > div{
-        grid-template-columns: 1fr;
-        justify-items: center;
-        
-    }
-    .data-table, .skills-table{
-        justify-self: center;
-        margin: 5px 0;
-    } */
-
-    #firstSection > div > img{
-        width: 80%;
-        transform: rotate(0);
-        box-shadow: none;
-    }
-}
 
