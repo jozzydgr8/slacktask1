@@ -10,7 +10,7 @@
     var day = dayOfWeek[date.getDay()] ;
 
 
-    var time = (`${hours}:${minutes}:${seconds}:${mSecs}`)
+    var time = (`${mSecs}`)
     var dateSpan = document.getElementById("date");
     var timeSpan = document.getElementById("time");
     timeSpan.textContent = time;
