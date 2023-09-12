@@ -7,7 +7,6 @@
     var seconds = date.getUTCSeconds();
     var mSecs = date.getUTCMilliseconds();
     
-    var dayOfWeek = ["Monday", "Tuesday", "Wednesday", "Thursday" , "Friday", "Saturday", "Sunday"];
     var day = date.toLocaleDateString(undefined, options) ;
 
 
