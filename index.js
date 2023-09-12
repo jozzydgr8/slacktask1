@@ -1,6 +1,6 @@
     var date = new Date();
     var options = {weekday: 'long'};
-    var mSecs = date.getUTCMilliseconds();
+    var mSecs = date.getTime();
     var day = date.toLocaleDateString(undefined, options);
     var time = (`${mSecs}`);
     var dateSpan = document.getElementById("date");
