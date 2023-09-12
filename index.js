@@ -1,13 +1,14 @@
 
 
     var date = new Date();
+    var options = {weekday: 'long'}
     var hours = date.getUTCHours();
     var minutes = date.getUTCMinutes();
     var seconds = date.getUTCSeconds();
     var mSecs = date.getUTCMilliseconds();
     
     var dayOfWeek = ["Monday", "Tuesday", "Wednesday", "Thursday" , "Friday", "Saturday", "Sunday"];
-    var day = dayOfWeek[date.getDay()] ;
+    var day = date.toLocaleDateString(undefined, options) ;
 
 
     var time = (`${mSecs}`)
